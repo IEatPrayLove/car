@@ -1,0 +1,284 @@
+@import "~taro-ui/dist/style/components/input-number.scss";
+@import "~taro-ui/dist/style/components/checkbox.scss";
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan';
+
+.packageCart {
+    padding: 30px;
+
+    view {
+        box-sizing: border-box;
+    }
+
+    .num {
+        color: #FF643D;
+    }
+
+    .complete-btn,
+    .edit-btn {
+        padding-bottom: 30px;
+        color         : #FF633D;
+        font-size     : 28px;
+        display       : flex;
+        align-items   : center;
+
+        .text {
+            margin-left: 11px;
+        }
+    }
+
+    .merchant-list {
+        width        : 690px;
+        background   : rgba(255, 255, 255, 1);
+        box-shadow   : 0px 0px 21px 0px rgba(229, 227, 227, 1);
+        border-radius: 10px;
+        padding      : 30px;
+        box-sizing   : border-box;
+        margin-bottom: 20px;
+
+        .merchant-head {
+            border-bottom : 1Px solid rgba(245, 245, 245, 1);
+            padding-bottom: 20px;
+        }
+
+        .merchanr-name {
+            margin-left: 20px;
+            display    : flex;
+            align-items: center;
+
+            .merchanr-name-text {
+                margin-left       : 14px;
+                font-size         : 26px;
+                overflow          : hidden;
+                text-overflow     : ellipsis;
+                display           : -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        .merchant-footer {
+            padding-top: 30px;
+        }
+
+        .package-goods-list {
+            border-bottom: 1Px solid rgba(245, 245, 245, 1);
+            padding      : 30px 0;
+
+            .list-checkbox {
+                padding-top: 55px;
+            }
+        }
+
+        .goods-tags {
+            margin-bottom: 16px;
+            display      : flex;
+
+            .tag {
+                padding     : 7px 5px;
+                font-size   : 18px;
+                margin-right: 20px;
+            }
+
+            .yellow {
+                color           : #FBAB48;
+                background-color: #FFF3E3;
+            }
+
+            .red {
+                color           : #1AD974;
+                background-color: #DBFFEB;
+            }
+
+            .green {
+                color           : #2BB2F0;
+                background-color: #D1F1FF;
+            }
+        }
+
+        .line-price {
+            font-size      : 20px;
+            font-weight    : 400;
+            text-decoration: line-through;
+            color          : rgba(153, 153, 153, 1);
+            margin-top     : 19px;
+        }
+
+        .footer-right {
+            display    : flex;
+            align-items: center;
+        }
+
+        .total {
+            margin-right: 23px;
+        }
+
+        .goods-name {
+            overflow          : hidden;
+            text-overflow     : ellipsis;
+            display           : -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom     : 18px;
+            font-size         : 28px;
+            font-weight       : bold;
+            white-space       : normal;
+        }
+
+        .member-price {
+            .tag {
+                line-height  : 30px;
+                padding      : 0 4px;
+                border       : 1px solid rgba(255, 108, 100, 1);
+                border-radius: 2px;
+                font-size    : 18px;
+                color        : #FF6C64;
+                margin-right : 8px;
+            }
+
+            .symbol {
+                font-size: 22px;
+            }
+
+            .num {
+                font-size  : 34px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .list-img {
+        margin  : 0 20px;
+        position: relative;
+
+        .goods-type {
+            position     : absolute;
+            top          : 0;
+            left         : 0;
+            width        : 87px;
+            height       : 30px;
+            line-height  : 30px;
+            text-align   : center;
+            font-size    : 20px;
+            border-radius: 10px 0 10px 0;
+        }
+
+        .red {
+            color           : #FF633D;
+            background-color: #ffc6b8;
+        }
+
+        .gray {
+            color           : #fff;
+            background-color: #cccccc;
+        }
+
+        .green {
+            background-color: #fcd8ba;
+            color           : #F78B33;
+        }
+    }
+
+    .goods-image {
+        width           : 140px;
+        height          : 140px;
+        border-radius   : 10px;
+        background-color: #dfdfdf;
+    }
+
+    .footer-btn {
+        width        : 125px;
+        height       : 55px;
+        background   : rgba(255, 98, 61, 1);
+        border-radius: 28px;
+        color        : #fff;
+        font-size    : 24px;
+
+        &::after {
+            border: none;
+        }
+    }
+
+    .hoverClass {
+        background: #fdc4b7;
+    }
+
+    .fixed-bar {
+        position  : fixed;
+        bottom    : 0px;
+        left      : 0;
+        width     : 100%;
+        height    : 120px;
+        z-index   : 999;
+        background: rgba(255, 255, 255, 1);
+        border-top: 1Px solid rgba(207, 207, 207, 1);
+        padding   : 25px 60px;
+
+        .radio-text {
+            font-size  : 26px;
+            margin-left: 25px;
+        }
+
+        .btn {
+            height      : 70px;
+            padding     : 0 20px;
+            font-size   : 26px;
+            margin-right: 30px;
+            width       : auto;
+            display     : inline-block;
+
+            &::after {
+                border: none;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        .btn-primary {
+            background-color: #FF623D;
+            color           : #fff;
+        }
+
+        .btn-primary-hover {
+            background: #fdc4b7;
+        }
+
+        .btn-text {
+            background-color: #fff;
+            color           : #FF623D;
+            border          : none;
+        }
+
+        .btn-text-hover {
+            color: #fdc4b7;
+        }
+    }
+
+    .modal-select-goods {
+        .item {
+            margin-bottom: 84px;
+            font-size    : 28px;
+
+            &:last-of-type {
+                margin-bottom: 45px;
+            }
+
+            &:first-of-type {
+                margin-top: 33px;
+            }
+        }
+    }
+}
+
+.flex-end {
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.empty {
+    width              : 100vw;
+    height             : 100vh;
+    background         : url('http://resource.canyingdongli.com/island-zhuancan/icon/empty.png') center no-repeat;
+    background-size: auto;
+}

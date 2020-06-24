@@ -1,0 +1,162 @@
+page {
+  height: 100%;
+}
+.pageBox{
+  position: relative;
+  &::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    content: "";
+    display: block;
+    background-color: #ff623d;
+    z-index: 0;
+  }
+  .at-search-bar{
+    background: none;
+  }
+}
+.specialOfferBox {
+  height: 100%;
+  overflow: hidden;
+}
+.header{
+  // background: #F6F6F6;
+  position: relative;
+  z-index: 100;
+  .search{
+    // background: #ffffff;
+    padding: 15px 30px;
+    margin-bottom: 12px;
+    .at-search-bar{
+      &:after{
+        border: none
+      }
+    }
+    .searchInt{
+      margin-left: 20px;
+    }
+    .name{
+      font-size: 26px;
+      // color: #333333;
+      color: #fff;
+      max-width: 160px;
+    }
+  }
+  .at-tabs__item{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .at-tabs__item-underline{
+    height: 4px;
+  }
+  .at-search-bar__input-cnt{
+    // background: rgba(255,255,255,.2);
+    background: #fff;
+  }
+  .at-search-bar__action{
+    background: #fff;
+    color: #ff623d;
+  }
+}
+
+.recommendGoodsList {
+  .recommendGoodsItem {
+    margin-bottom: 40px;
+    height: 6px;
+    background-color: #f6f6f6;
+  }
+}
+
+.category{
+  position: absolute;
+  color: #333;
+  font-size: 24px;
+  left:0;
+  right:0;
+  z-index: 100;
+  .categoryWarp{
+    max-height: 500px;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    view{
+      margin-bottom: 50px;
+    }
+  }
+}
+.categoryMask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background:rgba(27,27,27,0.3);
+}
+.goodsListBox{
+  height: calc(100vh - 90px);
+}
+.swiperBox{
+  // background-color: #fff;
+}
+.swiper{
+  height: 260rpx;
+  width: 690rpx;
+  border-radius: 10px;
+  margin: 0 30px;
+  overflow: hidden;
+  .image{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+.grid{
+  padding: 30px 31px 10px;
+  background-color: #fff;
+  .navlist{
+    display: flex;
+    flex-wrap: wrap;
+    .navlistItem{
+      margin-right: 16px;
+      margin-bottom: 16px;
+      &:nth-child(4n){
+        margin-right: 0;
+      }
+    }
+    .navImage{
+      width: 160px;
+      height: 160px;
+    }
+    .navText{
+      text-align: center;
+      margin-top: 12px;
+      font-size: 26rpx;
+      color: #505052;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+.AtTabsBox{
+  position: relative;
+  z-index: 9999;
+  .category{
+    z-index: 9999;
+  }
+}
+.AtTabs{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fff;
+  width: 100%;
+}

@@ -1,0 +1,248 @@
+$STATIC_ICON_URL:'http://resource.canyingdongli.com/island-zhuancan/icon';
+.pay-confirm{
+    position: relative;
+    padding: 0 10px;
+    background-color: #F7F7F7;
+    box-sizing: content-box;
+    view,text,.pay-confirm-box{
+        box-sizing: border-box;
+    }
+    &::before{
+        height: 282px;
+        width: 100%;
+        content: "";
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FF643D;
+    }
+    .pay-confirm-box{
+        height: 100vh;
+        width: 730px;
+        .scroll_box{
+            padding-top: 40px;
+            padding-bottom: 210px;
+        }
+    }
+    .fixed-btns{
+        position: absolute;
+        bottom: 70px;
+        width: 690px;
+        height: 100px;
+        left: 30px;
+        background:rgba(29,29,29,1);
+        box-shadow:0px 3px 7px 0px rgba(25, 25, 25, 0.35);
+        color: #fff;
+        border-radius: 50px;
+        z-index: 999;
+        .fixed-btns-box{
+            display: flex;
+        }
+        .textBox{
+            width: 520px;
+            font-size: 22px;
+            padding: 0 32px 0 42px;
+            line-height: 100px;
+            display: flex;
+            justify-content: space-between;
+            .discount{
+                .discount-num{
+                    color: #FF643D;
+                }
+            }
+            .text{
+                font-weight:bold;
+                font-size: 34px;
+            }
+        }
+        .confirm-btn{
+            flex: 1;
+            text-align: center;
+            line-height: 100px;
+            background:rgba(255,100,61,1);
+            border-radius:1px 50px 50px 0px;
+            font-size: 26px;
+            color: #fff;
+            &::after{
+                border: none;
+            }
+        }
+        .hoverBtn{
+            background:#fdc4b7;
+        }
+    }
+    .userInfo{
+        border-bottom: 2Px solid transparent;
+        border-image: url(#{$STATIC_ICON_URL}/border.png) 2 repeat;
+        border-radius: 10px 10px;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+    .userInfoBox{
+        padding: 40px 30px 45px;
+        font-size: 28px;
+        .address{
+            display: flex;
+            margin-bottom: 40px;
+            align-items: center;
+            .address-icon{
+                width: 29px;
+                height: 44px;
+            }
+            .textBox{
+                margin-left: 20px;
+                flex: 1;
+                .merchantName{
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                }
+                .merchantAddress{
+                    font-size: 24px;
+                    color: #777;
+                }
+            }
+
+        }
+        .label{
+            color: #666666;
+        }
+        .userName,.userPhone{
+            margin-bottom: 35px;
+        }
+        .mapBox{
+            width: 250px;
+            height: 250px;
+            position: relative;
+            border-radius: 20%;
+            // &::after{
+            //     position: absolute;
+            //     display: block;
+            //     content: "";
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     z-index: 999;
+            //     box-shadow: 0 0 250px 60px #ffffff inset;
+            // }
+            .map{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+    .payOther{
+        font-size: 26px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius:10px;
+        .packageInfo{
+            .merchantInfo{
+                margin-top: 34px;
+                margin-bottom: 38px;
+                display: flex;
+                align-items: center;
+            }
+            .merchant-icon{
+                margin-right: 20px;
+                image{
+                    width:50px;
+                    height:50px;
+                    border-radius:50%;
+                }
+            }
+            .merchant-name{
+                flex: 1;
+            }
+            .packageList{
+                border-bottom:1Px dashed rgba(204,204,204,1);
+                .packageItem{
+                    display: flex;
+                    margin-bottom: 44px;
+                    .packageImg{
+                        width:90px;
+                        height:90px;
+                        border-radius:11px;
+                        margin-right: 20px;
+                    }
+                    .packageDetail{
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .packageName{
+                            overflow : hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            white-space: nowrap;
+                            font-size: 28px;
+                        }
+                        .packageSKU{
+                            color: #BEBEBE;
+                            font-size: 24px;
+                        }
+                    }
+                    .packageNum{
+                        width: 90px;
+                        text-align: right;
+                    }
+                    .packagePrice{
+                        font-size: 30px;
+                        width: 90px;
+                        text-align: right;
+                        .small{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }    
+        .payInfoList{
+            border-bottom:1Px dashed rgba(204,204,204,1);
+            margin-top: 40px;
+            .payInfoItem{
+                margin-bottom: 54px;
+                .infoItemLabel{
+                    color: #999999;
+                    .tag{
+                        background-color: #FFDFD7;
+                        font-size: 20px;
+                        color: #FF643D;
+                        margin-right: 10px;
+                        padding: 0 8px;
+                    }
+                }
+                .font-30{
+                    font-size: 30px;
+                }
+                .infoItemValue{
+                    font-size: 28px;
+                    color: #333;
+                    .num{
+                        color: #FF643D;
+                    }
+                }
+            }
+        }
+        .payInfoNums{
+            color: #999999;
+            font-size: 22px;
+            margin-top: 32px;
+            .payInfoDiscount{
+                margin-right: 20px;
+            }
+            .payTotal{
+                font-size: 22px;
+                font-weight: bold;
+                color: #FF643D;
+                .num{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    
+}

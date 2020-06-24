@@ -1,0 +1,234 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "sweepTheDeck",
+	"description": "何师烧烤",
+	"appid": "wx4b788f7d5151d9b5",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": false,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.9.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "合伙人中心",
+					"pathName": "/pages/distributorIndex/distributorIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "门店详情",
+					"pathName": "package/multiStore/merchantDetail/merchantDetail",
+					"query": "id=1775&brandId=348",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店点餐页面",
+					"pathName": "package/multiStore/orderDishes/orderDishes",
+					"query": "id=1679",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "扫码点餐-选座",
+					"pathName": "package/multiStore/choosePerson/choosePerson",
+					"query": "merchantId=1690&tableId=28&brandId=311",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店列表",
+					"pathName": "package/multiStore/merchantList/merchantList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "品牌列表",
+					"pathName": "package/multiStore/brandList/brandList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "品牌详情",
+					"pathName": "package/multiStore/brandDetail/brandDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "package/multiStore/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分销悬赏",
+					"pathName": "package/distributor/productShare/productShare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分销列表",
+					"pathName": "package/distributor/productShare/productShare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单列表",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "肯德基(外卖点餐页)",
+					"pathName": "package/multiStore/orderDishes/orderDishes",
+					"query": "id=1795",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店详情（金街店）",
+					"pathName": "package/multiStore/merchantDetail/merchantDetail",
+					"query": "id=1819&brandId=362",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "金库",
+					"pathName": "pages/treasury/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "加入合伙人",
+					"pathName": "package/distributor/joinDistributor/joinDistributor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "pages/equityDetail/equityDetail",
+					"pathName": "pages/equityDetail/equityDetail",
+					"query": "orderSn=191231100720176523",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goodsDetails/goodsDetails",
+					"pathName": "pages/goodsDetails/goodsDetails",
+					"query": "dishId=9199&platFormId=393&merchantId=2512",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "package/multiStore/choosePerson/choosePerson",
+					"pathName": "package/multiStore/choosePerson/choosePerson",
+					"query": "merchantId=1690&tableId=28&brandId=311",
+					"scene": null
+				},
+				{
+					"id": 19,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "scene= ?brandGuid%3D6560521287326760961%26storeGuid%3D6670565239483793408%26areaGuid%3D6670565240905662464%26diningTableGuid%3D6670565241056657417%26tag%3D1",
+					"scene": 1011
+				},
+				{
+					"id": 20,
+					"name": "微信扫码点餐",
+					"pathName": "package/otherScanOrder/choosePerson/choosePerson",
+					"query": "scene=?brandGuid%3D6560521287326760961%26storeGuid%3D6670565239483793408%26areaGuid%3D6670565240905662464%26diningTableGuid%3D6670565241056657411%26tag%3D1",
+					"scene": null
+				},
+				{
+					"id": 21,
+					"name": "package/otherScanOrder/choosePerson/choosePerson",
+					"pathName": "package/otherScanOrder/choosePerson/choosePerson",
+					"query": "scene= ?brandGuid%3D11d2895a-ad2e-4283-ba69-69d98bd1d0a5%26storeGuid%3D06e57128-a16a-4bac-9778-439be83ac49d%26areaGuid%3Db6e24c66-36d4-42a7-97cc-3fce056d099f%26diningTableGuid%3D623e4dec-7713-4792-b4da-9bf1a19ff78f%26tag%3D1",
+					"scene": null
+				},
+				{
+					"id": 22,
+					"name": "扫码成为会员",
+					"pathName": "pages/legendsUserCenter/legendsUserCenter",
+					"query": "scene=?code=142242987",
+					"scene": null
+				},
+				{
+					"id": 23,
+					"name": "扫码点餐弹窗",
+					"pathName": "package/otherScanOrder/scanningIndex/scanningIndex",
+					"query": "brandId=6638270377459974144&enterpriseGuid=2002261114270540001&merchantId=6638270377413836800&newTable=false&openId=o46_-45mk19sZdgW7MjAu1p1KagY&orderSn=6651394249394749440&payType=1&personNum=4&phone=15282074283&preBrandId=404&preId=2168&tableId=6638270379808784385&tableName=A02&wxtoken=6679288252601466880&tableInfo={\"payType\":1,\"merchantName\":\"虾霸天天府广场店\",\"tableName\":\"A03\",\"tableNum\":\"6638270379808784386\",\"headImgUrl\":\"https://oss.holderzone.net/framework-prod/2020-01-01/1577881038130_ce752.jpg\",\"diningTableCode\":\"A03\",\"diningTableGuid\":\"6638270379808784386\",\"areaGuid\":\"6638270379783618560\",\"areaName\":\"大厅\",\"storeGuid\":\"6638270377413836800\",\"brandGuid\":\"6638270377459974144\",\"storeName\":\"虾霸天天府广场店\",\"wxUserInfoDTO\":{\"openId\":\"o46_-45mk19sZdgW7MjAu1p1KagY\",\"nickname\":\"无殇\",\"headImgUrl\":\"https://wx.qlogo.cn/mmopen/vi_32/QFIwExzZpRjZ4w5zhPvxUia5rQH7DW5ocNibqmeh2hVaRxP7YlT8VghXr2BovYkJC6jWhia1QOssES1EL0yg80Ejw/132\",\"sex\":1,\"isLogin\":true}}",
+					"scene": null
+				},
+				{
+					"id": 24,
+					"name": "场景值为扫码",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": 1011
+				}
+			]
+		}
+	}
+}

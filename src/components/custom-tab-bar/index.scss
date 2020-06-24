@@ -1,0 +1,69 @@
+/* components/custom-tab-bar.wxss */
+.isFullScreen{
+    height: 146px;
+    padding-bottom: 48px;
+}
+.customView{
+    height: 98px;
+}
+.customViewBox{
+    height: 98px;
+}
+.customTabBarBox{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:#fff;
+    z-index:9999;
+}
+.customTabBar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:#fff;
+    z-index:9999;
+    height:98px;
+    border-top:.5PX solid #d6e4ef;
+}
+.customTabBar .customTabBarContent{
+    height:100%
+}
+.customTabBar .tabBarItem,.customTabBar .tabBarList{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    -ms-flex-align:center;
+    align-items:center
+}
+.customTabBar .tabBarList{
+    height:100%;
+    -webkit-justify-content:space-around;
+    -ms-flex-pack:distribute;
+    justify-content:space-around
+}
+.customTabBar .tabBarItem{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center
+}
+.customTabBar .tabBarItem .tabBarIcon{
+    border:0;
+    width:44px;
+    height:44px;
+    display:block
+}
+.customTabBar .tabBarItem .tabBarText{
+    font-size:20px;
+    margin-top:5px
+}
